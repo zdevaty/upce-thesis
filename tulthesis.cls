@@ -267,52 +267,15 @@
 \newcommand{\TULpraceCZ}{\lowercase\expandafter{\TUL@levelCZ}}
 
 \newcommand{\DeclarationCZ}[1]{
-\section*{Prohl\'a\v sen\'\i}
+\section*{Prohla\v{s}uji:}
 
-Prohla\v{s}uji, \v{z}e \TULpracerod{sv\r uj}{svou}{sv\'e}
-\TULpraceou\ jsem vypracoval\TULfem{#1} samostatn\v{e} jako p\r{u}vodn\'{\i} d\'{\i}lo
-s pou\v{z}it\'{\i}m uveden\'{e} literatury%
-\ifthenelse{\equal{\TUL@kat}{Hab}}{}{ a na z\'{a}klad\v{e} konzultac\'{\i} s vedouc\'{\i}m
-\TULpracerod{m\'eho}{m\'e}{m\'ych} \TULpracee\ a konzultantem}.
+Tuto \TULpraceou\ jsem vypracoval\TULfem{#1} samostatn\v{e}. Veškeré literární prameny a~informace, které jsem v~práci využil\TULfem{#1}, jsou uvedeny v~seznamu použité literatury.
+Byl\TULfem{#1} jsem seznámen\TULfem{#1} s~tím, že se na moji práci vztahují práva a~povinnosti vyplývající ze zákona č.~121/2000 Sb., o~právu autorském, o~právech souvisejících s~právem autorským a~o~změně některých zákonů (autorský zákon), ve znění pozdějších předpisů, zejména se skutečností, že Univerzita Pardubice má právo na uzavření licenční smlouvy o~užití této práce jako školního díla podle §~60 odst. 1 autorského zákona, a~s~tím, že pokud dojde k~užití této práce mnou nebo bude poskytnuta licence o~užití jinému subjektu, je Univerzita Pardubice oprávněna ode mne požadovat přiměřený příspěvek na úhradu nákladů, které na vytvoření díla vynaložila, a~to podle okolností až do jejich skutečné výše.
 
-\ifthenelse{\equal{\TUL@kat}{Hab}}{}{Jsem si v\v{e}dom\TULfem{#1} toho, \v{z}e
-  na \TULpracerod{m\r uj}{mou}{m\'e} \TULpraceou\ se pln\v{e} vztahuje z\'{a}kon
-  \v{c}.~121/2000 Sb., o~pr\'{a}vu autorsk\'{e}m, zejm\'{e}na \S~60~-- \v
-  skoln\'{\i} d\'{\i}lo.
-
-  Beru na v\v edom\'{\i}, \v ze Technick\'a univerzita v~Liberci nezasahuje
-  do m\'ych autorsk\'ych pr\'av u\v zit\'{\i}m
-  \TULpracerod{m\'eho}{m\'e}{m\'ych} \TULpracee\ pro
-  vnit\v rn\'{\i} pot\v rebu Technick\'{e} univerzity v~Liberci.
-
-  U\v ziji-li \TULpraceou\ nebo poskytnu-li licenci
-  k~\TULpracerod{jeho}{jej\'{\i}mu}{jejich} vyu\v zit\'{\i},
-  jsem si v\v edom\TULfem{#1} povinnosti informovat
-  o~t\'eto skute\v cnosti Technickou univerzitu v~Liberci;
-  v~tomto p\v r\'{\i}pad\v e m\'a Technick\'a univerzita v~Liberci
-  pr\'avo ode mne po\v zadovat \'uhradu n\'aklad\r u,
-  kter\'e vynalo\v zila na vytvo\v ren\'{\i} d\'{\i}la,
-  a\v z do jejich skute\v cn\'e v\'y\v se.
-
-  \ifthenelse{\equal{\TUL@kat}{BP} \OR \equal{\TUL@kat}{DP} \OR
-  \equal{\TUL@kat}{Dis}}{Sou\v{c}asn\v{e} \v{c}estn\v{e} prohla\v{s}uji,
-  \v{z}e text elektronick\'{e} podoby pr\'{a}ce vlo\v{z}en\'{y} do IS STAG
-  se shoduje s textem ti\v{s}t\v{e}n\'{e} podoby pr\'{a}ce.}{}}
-
-Beru na v\v{e}dom\'{\i}, \v{z}e \TULpracerod{m\r uj}{m\'a}{m\'e}
-\TULpraceCZ\ \TULpracerod{bude zve\v{r}ejn\v{e}n}{bude zve\v{r}ejn\v{e}na}{budou
-zve\v{r}ejn\v{e}ny} Technickou univerzitou v~Liberci v souladu s~\S~47b
-z\'{a}kona \v{c}.~111/1998 Sb., o~vysok\'{y}ch \v{s}kol\'{a}ch a
-o~zm\v{e}n\v{e} a dopln\v{e}n\'{\i} dal\v{s}\'{\i}ch z\'{a}kon\r{u} (z\'{a}kon
-o~vysok\'{y}ch \v{s}kol\'{a}ch), ve zn\v{e}n\'{\i} pozd\v{e}j\v{s}\'{\i}ch
-p\v{r}edpis\r{u}.
-
-Jsem si v\v{e}dom\TULfem{#1} n\'{a}sledk\r{u}, kter\'{e} podle z\'{a}kona
-o~vysok\'{y}ch \v{s}kol\'{a}ch mohou vypl\'{y}vat z poru\v{s}en\'{\i} tohoto
-prohl\'{a}\v{s}en\'{\i}.
+Beru na vědomí, že v~souladu s~§~47b zákona č.~111/1998 Sb., o~vysokých školách a~o~změně a~doplnění dalších zákonů (zákon o vysokých školách), ve znění pozdějších předpisů, a~směrnicí Univerzity Pardubice č.~7/2019 Pravidla pro odevzdávání, zveřejňování a~formální úpravu závěrečných prací, ve znění pozdějších dodatků, bude práce zveřejněna prostřednictvím Digitální knihovny Univerzity Pardubice.
 
 \vspace{2cm}
-\noindent \the\day. \the\month. \the\year
+V Pardubicích dne \noindent \the\day. \the\month. \the\year
 \hfill
 \noindent \TUL@autor
 }
