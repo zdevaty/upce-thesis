@@ -461,11 +461,8 @@
 
 % aktivace pisem
 \ifthenelse{\boolean{TULf@nts}}{
+    \newcommand\TULmono{\sffamily\bfseries}
     \RequirePackage{fontspec}
-    \setmainfont[Mapping=tex-text,BoldFont={* Bold}]{Inter}
-    \setsansfont[Mapping=tex-text,BoldFont={* Bold}]{Inter}
-    \setmonofont{Noto Sans Mono}
-    \newfontfamily\TULmono[Ligatures=Contextual]{TUL Mono}
 }{
     \newcommand\TULmono{\sffamily\bfseries}
 }
