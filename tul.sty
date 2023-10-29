@@ -1,4 +1,4 @@
-\ProvidesPackage{tul}[2023/09/16 version 0.0]
+\ProvidesPackage{tul}[2023/10/29 version 0.0]
 % Licence: CC BY
 
 \RequirePackage{ifthen}
@@ -192,24 +192,6 @@
 \newpage
 }}
 
-\newcommand{\TULfancytitlepage}[3]{{%
-\thispagestyle{TULheaderonly}
-\pagecolor{\tulcolor}\darkTULbg
-\mbox{}
-\vfill
-\vfill
-\vfill
-\bgroup
-\raggedright
-\color{white}\huge\bfseries\TULmono\setlength{\baselineskip}{2.5\f@ntsize} #1\par
-
-\create@uthb@x{#2}{#3}
-\egroup
-\vfill
-\newpage
-\pagecolor{white}
-}}
-
 % pisma - priprava
 \newboolean{TULf@nts}
 \setboolean{TULf@nts}{false}
@@ -270,6 +252,8 @@
 \ifthenelse{\boolean{TULf@nts}}{
     \newcommand\TULmono{\sffamily\bfseries}
     \RequirePackage{fontspec}
+    \setmainfont{Times New Roman}
+    \setsansfont{Helvetica}
 }{
     \newcommand\TULmono{\sffamily\bfseries}
 }

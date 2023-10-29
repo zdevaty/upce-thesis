@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{tulthesis}[2022/09/16 TUL thesis class version 2.0]
+\ProvidesClass{tulthesis}[2023/10/29 UPCE thesis class version 0.0]
 % Licence: CC BY
 
 \newcommand{\TUL@baseclass}{report}
@@ -67,15 +67,6 @@
     \renewcommand{\TULpracee}{semestr\'aln\'{\i} pr\'ace}
     \renewcommand{\TULpracerod}[3]{#2}
     \renewcommand{\TUL@kat}{SP}}
-\DeclareOption{FS}{\PassOptionsToPackage{\CurrentOption}{tul}}
-\DeclareOption{FT}{\PassOptionsToPackage{\CurrentOption}{tul}}
-\DeclareOption{FP}{\PassOptionsToPackage{\CurrentOption}{tul}}
-\DeclareOption{EF}{\PassOptionsToPackage{\CurrentOption}{tul}}
-\DeclareOption{FA}{\PassOptionsToPackage{\CurrentOption}{tul}}
-\DeclareOption{FM}{\PassOptionsToPackage{\CurrentOption}{tul}}
-\DeclareOption{FZS}{\PassOptionsToPackage{\CurrentOption}{tul}}
-\DeclareOption{UZS}{\PassOptionsToPackage{\CurrentOption}{tul}}
-\DeclareOption{CXI}{\PassOptionsToPackage{\CurrentOption}{tul}}
 \DeclareOption{bwtitles}{\PassOptionsToPackage{\CurrentOption}{tul}}
 \DeclareOption{bw}{\PassOptionsToPackage{\CurrentOption}{tul}}
 \DeclareOption{fonts}{\PassOptionsToPackage{\CurrentOption}{tul}}
@@ -238,7 +229,7 @@
       \@nameuse{\roman{TULc@unter}@TULkonzultant}\\
   }
 }
-\rule{0pt}{1cm} & Liberec \TUL@rok \\
+\rule{0pt}{1cm} & Pardubice \TUL@rok \\
 \end{tabularx}
 
 \end{minipage}
@@ -269,7 +260,7 @@
 \newcommand{\DeclarationCZ}[1]{
 \section*{Prohla\v{s}uji:}
 
-Tuto \TULpraceou\ jsem vypracoval\TULfem{#1} samostatn\v{e}. Veškeré literární prameny a~informace, které jsem v~práci využil\TULfem{#1}, jsou uvedeny v~seznamu použité literatury.
+Tuto \TULpraceou\ jsem vypracoval\TULfem{#1} samostatně. Veškeré literární prameny a~informace, které jsem v~práci využil\TULfem{#1}, jsou uvedeny v~seznamu použité literatury.
 Byl\TULfem{#1} jsem seznámen\TULfem{#1} s~tím, že se na moji práci vztahují práva a~povinnosti vyplývající ze zákona č.~121/2000 Sb., o~právu autorském, o~právech souvisejících s~právem autorským a~o~změně některých zákonů (autorský zákon), ve znění pozdějších předpisů, zejména se skutečností, že Univerzita Pardubice má právo na uzavření licenční smlouvy o~užití této práce jako školního díla podle §~60 odst. 1 autorského zákona, a~s~tím, že pokud dojde k~užití této práce mnou nebo bude poskytnuta licence o~užití jinému subjektu, je Univerzita Pardubice oprávněna ode mne požadovat přiměřený příspěvek na úhradu nákladů, které na vytvoření díla vynaložila, a~to podle okolností až do jejich skutečné výše.
 
 Beru na vědomí, že v~souladu s~§~47b zákona č.~111/1998 Sb., o~vysokých školách a~o~změně a~doplnění dalších zákonů (zákon o vysokých školách), ve znění pozdějších předpisů, a~směrnicí Univerzity Pardubice č.~7/2019 Pravidla pro odevzdávání, zveřejňování a~formální úpravu závěrečných prací, ve znění pozdějších dodatků, bude práce zveřejněna prostřednictvím Digitální knihovny Univerzity Pardubice.
@@ -338,7 +329,7 @@ from a breach of this declaration.
     \ifthenelse{\equal{\TUL@kat}{BP}
             \OR \equal{\TUL@kat}{DP}
             \OR \equal{\TUL@kat}{RP}
-            \OR \equal{\TUL@kat}{MP}}{\Assignment}{}
+            \OR \equal{\TUL@kat}{MP}}{\Assignment \Assignment}{}
     \Declaration{#1}}%
 {\includepdf[pages=-]{#1}}
 }
@@ -347,12 +338,12 @@ from a breach of this declaration.
 \newenvironment{abstractCZ}[1][narrow]{\ifthenelse{\equal{#1}{wide}}%
 {\renewcommand{\endabstractCZ}{\par}}% široká verze na konci nedělá nic
 {\begin{uzky@text}\renewcommand{\endabstractCZ}{\end{uzky@text}}}% úzká verze
-\section*{\TUL@nazevCZ}\medskip\section*{Abstrakt}}{}
+\section*{\TUL@nazevCZ}\medskip\section*{Anotace}}{}
 
 \newenvironment{abstractEN}[1][narrow]{\ifthenelse{\equal{#1}{wide}}%
 {\renewcommand{\endabstractEN}{\par}}% široká verze na konci nedělá nic
 {\begin{uzky@text}\renewcommand{\endabstractEN}{\end{uzky@text}}}% úzká verze
-\section*{\TUL@nazevEN}\medskip\section*{Abstract}}{}
+\section*{\TUL@nazevEN}\medskip\section*{Annotation}}{}
 
 \newenvironment{keywordsCZ}[1][narrow]{\ifthenelse{\equal{#1}{wide}}%
 {\renewcommand{\endkeywordsCZ}{\par}}% široká verze na konci nedělá nic
